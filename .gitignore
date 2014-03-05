@@ -9,6 +9,10 @@
 #########
 target
 
+# TestNG #
+##########
+test-output
+
 # IntelliJ IDEA #
 #################
 .idea
