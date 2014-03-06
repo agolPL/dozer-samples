@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mappings xmlns="http://dozer.sourceforge.net" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://dozer.sourceforge.net
+          http://dozer.sourceforge.net/schema/beanmapping.xsd">
+
+	<mapping>
+		<class-a>pl.agol.dozer.test.entity.composition.CarFactory.Car</class-a>
+		<class-b>pl.agol.dozer.test.entity.composition.CarFactory.CarRepairInfo</class-b>
+
+		<field>
+			<a>brand</a>
+			<b>carBrand</b>
+		</field>
+
+		<field>
+			<a>engine.type</a>
+			<b>engineType</b>
+		</field>
+	</mapping>
+
+	<mapping>
+		<class-a>pl.agol.dozer.test.entity.collection.Garage</class-a>
+		<class-b>pl.agol.dozer.test.entity.collection.GarageInfo</class-b>
+		
+		<field>
+			<a>cars</a>
+			<b>carRepairInfos</b>
+		</field>
+		
+	</mapping>
+
+</mappings> 
