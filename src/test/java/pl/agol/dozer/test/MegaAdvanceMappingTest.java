@@ -59,7 +59,7 @@ public class MegaAdvanceMappingTest {
 	}
 
 	@Test
-	public void should_create_OtherPerson_from_given_Person() throws Exception {
+	public void should_create_Mtu_from_given_Person() throws Exception {
 
 		// given
 		Person person = new Person()

@@ -9,6 +9,7 @@ import org.dozer.DozerBeanMapper;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import pl.agol.dozer.test.entity.Mtu;
 import pl.agol.dozer.test.entity.OtherPerson;
 import pl.agol.dozer.test.entity.Person;
 
@@ -46,5 +47,26 @@ public class SimpleDozerMappingTest {
 		assertEquals(otherPerson.getName(), Person.PERSON_NAME);
 		assertEquals(otherPerson.getLastname(), Person.PERSON_LASTNAME);
 	}
+	
+	@Test
+	public void should_create_Mtu_from_given_Person() throws Exception {
+
+		// given
+		Person person = new Person()
+			.hasAge(Person.PERSON_AGE)
+			.hasLastname(Person.PERSON_LASTNAME)
+			.hasName(Person.PERSON_NAME);
+
+		// when
+		Mtu mtu = mapper.map(person, Mtu.class);
+
+		// then
+		assertEquals(mtu.getUmri(), Person.PERSON_AGE);
+		assertEquals(mtu.getJina(), Person.PERSON_NAME);
+		assertEquals(mtu.getJinaLaMwisho(), Person.PERSON_LASTNAME);
+
+	}
+	
+	
 
 }

@@ -23,5 +23,26 @@
 		</field>
 
 	</mapping>
+	
+		<mapping>
+		<class-a is-accessible="true">pl.agol.dozer.test.entity.Person</class-a>
+		<class-b is-accessible="true">pl.agol.dozer.test.entity.Mtu</class-b>
+
+		<field>
+			<a>name</a>
+			<b>jina</b>
+		</field>
+
+		<field>
+			<a>age</a>
+			<b>umri</b>
+		</field>
+
+		<field>
+			<a>lastname</a>
+			<b>jinaLaMwisho</b>
+		</field>
+
+	</mapping>
 
 </mappings> 
