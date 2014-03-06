@@ -38,17 +38,17 @@ public class SimpleMappingTest {
 		
 		//given
 		Person person = new Person()
-			.hasAge(Person.AGE)
-			.hasLastname(Person.LASTNAME)
-			.hasName(Person.NAME);
+			.hasAge(Person.PERSON_AGE)
+			.hasLastname(Person.PERSON_LASTNAME)
+			.hasName(Person.PERSON_NAME);
 		
 		//when
 		OtherPerson otherPerson = mapper.map(person);
 		
 		//than
-		assertEquals(otherPerson.getAge(), Person.AGE);
-		assertEquals(otherPerson.getName(), Person.NAME);
-		assertEquals(otherPerson.getLastname(), Person.LASTNAME);
+		assertEquals(otherPerson.getAge(), Person.PERSON_AGE);
+		assertEquals(otherPerson.getName(), Person.PERSON_NAME);
+		assertEquals(otherPerson.getLastname(), Person.PERSON_LASTNAME);
 		
 	}
 }

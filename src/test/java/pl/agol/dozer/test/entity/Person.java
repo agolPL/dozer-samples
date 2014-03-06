@@ -7,9 +7,9 @@ package pl.agol.dozer.test.entity;
  */
 public class Person {
 
-	public static final String NAME = "Andrzej";
-	public static final String LASTNAME = "Goławski";
-	public static final Integer AGE = 34;
+	public static final String PERSON_NAME = "Andrzej";
+	public static final String PERSON_LASTNAME = "Goławski";
+	public static final Integer PERSON_AGE = 34;
 
 	private String name;
 	private String lastname;
