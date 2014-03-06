@@ -2,11 +2,6 @@ package pl.agol.dozer.test;
 
 import static org.testng.Assert.assertEquals;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import org.dozer.DozerBeanMapper;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import pl.agol.dozer.test.entity.Mtu;
@@ -18,16 +13,10 @@ import pl.agol.dozer.test.entity.Person;
  * @author Andrzej Goławski
  * 
  */
-public class SimpleDozerMappingTest {
+public class SimpleDozerMappingTest extends DozerXMLTestTemplate {
 
-	private DozerBeanMapper mapper;
-
-	@BeforeClass
-	public void setup() {
-		List<String> files = new ArrayList<String>();
-		files.add("PersonMapping.xml");
-		mapper = new DozerBeanMapper();
-		mapper.setMappingFiles(files);
+	public SimpleDozerMappingTest() {
+		super("PersonMapping.xml");
 	}
 
 	@Test
