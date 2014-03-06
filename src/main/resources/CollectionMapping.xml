@@ -26,7 +26,21 @@
 			<a>cars</a>
 			<b>carRepairInfos</b>
 		</field>
+	</mapping>
+	
+	<mapping>
+		<class-a>pl.agol.dozer.test.entity.collection.Garage</class-a>
+		<class-b>pl.agol.dozer.test.entity.composition.CarFactory.CarRepairInfo</class-b>
 		
+		<field>
+			<a>cars[0].brand</a>
+			<b>carBrand</b>
+		</field>
+
+		<field>
+			<a>cars[0].engine.type</a>
+			<b>engineType</b>
+		</field>
 	</mapping>
 
 </mappings> 
