@@ -15,7 +15,7 @@ import pl.agol.dozer.test.entity.Person;
  * @author Andrzej Goławski
  * 
  */
-public class PersonMappingTest {
+public class SimpleDozerMappingTest {
 
 	private Mapper mapper;
 
