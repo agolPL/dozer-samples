@@ -14,9 +14,9 @@ import pl.agol.dozer.test.entity.composition.CarFactory.Engine.Enginetype;
  * @author Andrzej Goławski
  * 
  */
-public class CarFactoryDozerMappingTest extends DozerXMLTestTemplate {
+public class CompositionDozerMappingTest extends DozerXMLTestTemplate {
 
-	public CarFactoryDozerMappingTest() {
+	public CompositionDozerMappingTest() {
 		super("CarFactoryMapping.xml");
 	}
 
