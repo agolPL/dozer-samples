@@ -1,5 +1,7 @@
 package pl.agol.dozer.test.entity;
 
+import pl.agol.dozer.test.MegaAdvanceMappingTest.Mapper;
+
 /**
  * 
  * @author Andrzej Goławski
@@ -7,10 +9,13 @@ package pl.agol.dozer.test.entity;
  */
 public class Mtu {
 
+	@Mapper("name")
 	private String jina;
-
+	
+	@Mapper("lastname")
 	private String jinaLaMwisho;
-
+	
+	@Mapper("age")
 	private Integer umri;
 
 	public String getJina() {
