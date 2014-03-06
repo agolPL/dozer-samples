@@ -1,4 +1,4 @@
-package pl.agol.dozer.test.entity.iheritance;
+package pl.agol.dozer.test.entity.inheritance;
 
 /**
  * 

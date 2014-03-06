@@ -4,9 +4,9 @@ import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.Test;
 
-import pl.agol.dozer.test.entity.iheritance.ZooDmain.AnimalInfo;
-import pl.agol.dozer.test.entity.iheritance.ZooDmain.Bull;
-import pl.agol.dozer.test.entity.iheritance.ZooDmain.Dog;
+import pl.agol.dozer.test.entity.inheritance.ZooDmain.AnimalInfo;
+import pl.agol.dozer.test.entity.inheritance.ZooDmain.Bull;
+import pl.agol.dozer.test.entity.inheritance.ZooDmain.Dog;
 
 /**
  * 
