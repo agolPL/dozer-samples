@@ -15,6 +15,8 @@ public class CarFactory {
 
 		private Engine engine;
 
+		private Manufacturer manufacturer;
+
 		public Engine getEngine() {
 			return engine;
 		}
@@ -31,6 +33,14 @@ public class CarFactory {
 			this.brand = brand;
 		}
 
+		public Manufacturer getManufacturer() {
+			return manufacturer;
+		}
+
+		public void setManufacturer(Manufacturer manufacturer) {
+			this.manufacturer = manufacturer;
+		}
+
 	}
 
 	public static class Engine {
@@ -40,10 +50,10 @@ public class CarFactory {
 		}
 
 		private Enginetype type;
-		
+
 		public Engine() {
 		}
-		
+
 		public Engine(Enginetype type) {
 			this.type = type;
 		}
@@ -58,11 +68,45 @@ public class CarFactory {
 
 	}
 
+	public static class Manufacturer {
+
+		private String name;
+
+		private String adddress;
+
+		public Manufacturer() {
+		}
+
+		public Manufacturer(String name, String adddress) {
+			this.name = name;
+			this.adddress = adddress;
+		}
+
+		public String getName() {
+			return name;
+		}
+
+		public void setName(String name) {
+			this.name = name;
+		}
+
+		public String getAdddress() {
+			return adddress;
+		}
+
+		public void setAdddress(String adddress) {
+			this.adddress = adddress;
+		}
+
+	}
+
 	public static class CarRepairInfo {
 
 		private String carBrand;
 
 		private Enginetype engineType;
+
+		private String manufacturerInfo;
 
 		public String getCarBrand() {
 			return carBrand;
@@ -79,6 +123,15 @@ public class CarFactory {
 		public void setEngineType(Enginetype engineType) {
 			this.engineType = engineType;
 		}
+
+		public String getManufacturerInfo() {
+			return manufacturerInfo;
+		}
+
+		public void setManufacturerInfo(String manufacturerInfo) {
+			this.manufacturerInfo = manufacturerInfo;
+		}
+
 	}
 
 }
