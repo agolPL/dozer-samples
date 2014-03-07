@@ -4,8 +4,8 @@
           http://dozer.sourceforge.net/schema/beanmapping.xsd">
 
 	<mapping>
-		<class-a>pl.agol.dozer.test.entity.iheritance.ZooDmain.Dog</class-a>
-		<class-b>pl.agol.dozer.test.entity.iheritance.ZooDmain.AnimalInfo
+		<class-a>pl.agol.dozer.test.entity.inheritance.ZooDomain.Dog</class-a>
+		<class-b>pl.agol.dozer.test.entity.inheritance.ZooDomain.AnimalInfo
 		</class-b>
 
 		<field>
@@ -16,8 +16,8 @@
 	</mapping>
 
 	<mapping>
-		<class-a>pl.agol.dozer.test.entity.iheritance.ZooDmain.Bull</class-a>
-		<class-b>pl.agol.dozer.test.entity.iheritance.ZooDmain.AnimalInfo
+		<class-a>pl.agol.dozer.test.entity.inheritance.ZooDomain.Bull</class-a>
+		<class-b>pl.agol.dozer.test.entity.inheritance.ZooDomain.AnimalInfo
 		</class-b>
 
 		<field>

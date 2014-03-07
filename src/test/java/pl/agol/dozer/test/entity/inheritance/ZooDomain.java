@@ -5,7 +5,7 @@ package pl.agol.dozer.test.entity.inheritance;
  * @author Andrzej Goławski
  * 
  */
-public class ZooDmain {
+public class ZooDomain {
 
 	public static abstract class Animal {
 

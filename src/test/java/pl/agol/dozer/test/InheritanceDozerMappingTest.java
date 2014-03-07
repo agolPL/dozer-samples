@@ -4,9 +4,9 @@ import static org.testng.Assert.assertEquals;
 
 import org.testng.annotations.Test;
 
-import pl.agol.dozer.test.entity.inheritance.ZooDmain.AnimalInfo;
-import pl.agol.dozer.test.entity.inheritance.ZooDmain.Bull;
-import pl.agol.dozer.test.entity.inheritance.ZooDmain.Dog;
+import pl.agol.dozer.test.entity.inheritance.ZooDomain.AnimalInfo;
+import pl.agol.dozer.test.entity.inheritance.ZooDomain.Bull;
+import pl.agol.dozer.test.entity.inheritance.ZooDomain.Dog;
 
 /**
  * 
@@ -34,7 +34,7 @@ public class InheritanceDozerMappingTest extends DozerXMLTestTemplate {
 	}
 
 	@Test
-	public void should_create_AnimalInfo_from_given_Cat() {
+	public void should_create_AnimalInfo_from_given_Bull() {
 
 		// given
 		Bull bull = new Bull();
