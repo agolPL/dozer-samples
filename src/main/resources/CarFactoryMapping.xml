@@ -17,7 +17,7 @@
 			<b>engineType</b>
 		</field>
 		
-		<field>
+		<field custom-converter = "pl.agol.dozer.test.entity.converter.ManufacturerToInfoConverter">
 			<a>manufacturer</a>
 			<b>manufacturerInfo</b>
 		</field>

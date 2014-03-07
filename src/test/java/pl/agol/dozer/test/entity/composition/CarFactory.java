@@ -97,7 +97,6 @@ public class CarFactory {
 		public void setAdddress(String adddress) {
 			this.adddress = adddress;
 		}
-
 	}
 
 	public static class CarRepairInfo {
