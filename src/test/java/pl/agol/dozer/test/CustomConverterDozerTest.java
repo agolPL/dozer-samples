@@ -18,7 +18,7 @@ import pl.agol.dozer.test.entity.composition.CarFactory.Manufacturer;
 public class CustomConverterDozerTest extends DozerXMLTestTemplate {
 
 	public CustomConverterDozerTest() {
-		super("CarFactoryMapping.xml");
+		super("CustomerCarFactoryMapping.xml");
 	}
 
 	@Test
